@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario JS</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="informacoes">
+            <h1 class="titulo"><span>FICOU COM DÚVIDA?</span> NOS MANDE UMA MENSAGEM!</h1>
+            <p class="informativo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+        <div class="form">
+        <form action="./index.html" method="get">
+
+            <div class="validacao-usuario">
+                <input type="text" name="nome" placeholder="Nome Completo *" required>
+                <p class="campo-obrigatorio"></p>
+            </div>
+            
+            <div class="validacao-usuario">
+                <input type="email" name="email" placeholder="Email *" required>
+                <p class="campo-obrigatorio"></p>
+            </div>
+            
+            <div class="validacao-usuario">
+                <input type="tel" name="telefone" placeholder="Telefone *" required>
+                <p class="campo-obrigatorio"></p>
+            </div>
+            <div class="validacao-usuario">
+                <textarea name="mensagem" placeholder="Mensagem *" rows="5"
+                cols="32" required></textarea>
+                <p class="campo-obrigatorio" id="mensagem-usuario"></p>
+            </div>
+            <p class="campo-obrigatorio-visivel">*campos obrigatórios</p>
+            <button id="btn-enviar" > Enviar </button>
+        </form>
+        </div>
+    </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

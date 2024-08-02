@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    background-image: url(../images/bg-repeat.jpeg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex; 
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.container .informacoes {
+    max-width: 290px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .informacoes .titulo {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .informacoes .informativo {
+    font-size: 15px;
+}
+
+.container .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    max-width: 340px;
+    padding: 20px;
+    color: #A8A8A8;
+}
+
+.container .form input {
+    width: 300px;
+
+}
+
+.container .form .campo-obrigatorio-visivel {
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #000;
+}
+
+.container .form textarea {
+    font-size: 15px;
+    resize: none;
+    width: 300px;
+    
+}
+
+
+.container .form input, textarea {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.container .form input, textarea, button {
+    border-radius: 5px;
+}
+
+.container .form button {
+    cursor: pointer;
+    padding: 12px;
+    background-color: #3CCC87;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.container .form button:hover {
+    opacity: 0.9;
+}
+
+.container .form .campo-vazio {
+    border: 1px solid #F52E2E;
+}
+
+.container .form .campo-preenchido {
+    border: 1px solid lightgreen;
+}
+
+
+
+.container .form .campo-obrigatorio {
+    color: #F52E2E;
+    font-size: 8px;
+    margin: 0px 2px;
+}
+
+
+.container .form  .validacao-usuario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+}
+
+.container .form .alterar-espacamento{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
